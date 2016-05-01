@@ -1,0 +1,11 @@
+== README
+
+This is a base application making it incredibly easy to build standalone apps that consume the Contactually API (https://developers.contactually.com/). 
+
+The only think you need to do is register for an application at https://www.contactually.com/developer/applications, then set your CONTACTUALLY_APP_ID and CONTACTUALLY_APP_SECRET env variables. Or set them somewhere else and modify devise.rb and user.rb.
+
+Basic user flow already put in and tested. Disabled a lot of the other devise functionality, so single point of authentication is Contactually. But feel free to modify as you want. 
+
+Zurb's Foundation 6 installed for the frontend. Basic UI already in.
+
+Completely as-is.

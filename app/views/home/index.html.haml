@@ -1,0 +1,16 @@
+.row
+  .large-12.columns
+    %h2 Hello!
+    %hr
+    .callout.secondary
+      %h4 
+        Looks like you're logged in. Hello
+        = current_user.email
+    .callout.success
+      %h4 Testing the API
+      Here's your avatar:
+      %img{:src=>@me["avatar_url"]}
+    %hr
+    .row
+      .large-3.small-6.columns.small-centered
+        = link_to('Logout', destroy_user_session_path, :method => :delete,:class=>"alert button expanded")
