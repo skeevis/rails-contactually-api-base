@@ -1,0 +1,5 @@
+development:
+  contactually:
+    application_id: 
+    application_secret: 
+  test_string: foobarbaz

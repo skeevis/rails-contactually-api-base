@@ -6,6 +6,9 @@ class HomeController < ApplicationController
     @client = current_user.contactually_api
     @me = @client.get("/v2/me").parsed['data']    
 
+    SampleWorker.perform_async()
+
+
     render 'index'
   end
 end

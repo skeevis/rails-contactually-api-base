@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
   end
 
   def contactually_api
-    @api_client ||=  OAuth2::Client.new(ENV['CONTACTUALLY_APP_ID'], ENV['CONTACTUALLY_APP_SECRET'], :site => 'https://api.contactually.com')
+    @api_client ||=  OAuth2::Client.new(configatron.contactually.application_id, configatron.contactually.application_secret, :site => 'https://api.contactually.com')
     @access_token ||= OAuth2::AccessToken.from_hash(@api_client, access_token: access_token)     
   end
 end

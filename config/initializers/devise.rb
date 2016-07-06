@@ -260,5 +260,5 @@ Devise.setup do |config|
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
   #require Rails.root.join('lib', 'omniauth', 'strategies', 'contactually.rb').to_s 
-  config.omniauth :contactually, ENV['CONTACTUALLY_APP_ID'], ENV['CONTACTUALLY_APP_SECRET'], :scope=>"all:manage"
+  config.omniauth :contactually, configatron.contactually.application_id, configatron.contactually.application_secret, :scope=>"all:manage"
 end

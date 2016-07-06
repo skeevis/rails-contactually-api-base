@@ -55,4 +55,10 @@ gem 'omniauth'
 gem "omniauth-contactually", :git => "https://github.com/contactually/omniauth-contactually"
 gem 'foundation-rails'
 gem 'haml'
+gem 'configatron'
+gem 'sidekiq'
+gem 'foreman'
+gem 'puma'
+gem 'mongoid'
+gem 'httparty'
 
